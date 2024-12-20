@@ -82,7 +82,7 @@ export default {
   methods: {
     async fetchItems() {
       try {
-        const response = await axios.get("https://idosfinance.xyz/stock");
+        const response = await axios.get("https://daxiklez-store-api.vercel.app/stock");
         this.items = response.data;
       } catch (error) {
         console.error("Error fetching stock items:", error);
